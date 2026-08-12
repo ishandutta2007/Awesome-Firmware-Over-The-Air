@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)" rx="16" />
+  
+  <!-- Dynamic Animated Waves & Signal Rings -->
+  <g opacity="0.25">
+    <circle cx="200" cy="150" r="100" fill="none" stroke="#38bdf8" stroke-width="2">
+      <animate attributeName="r" values="50;180;50" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1000" cy="150" r="120" fill="none" stroke="#c084fc" stroke-width="2">
+      <animate attributeName="r" values="60;200;60" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Flow Circuit Lines -->
+  <path d="M 150 150 Q 300 80 450 150 T 750 150 T 1050 150" fill="none" stroke="url(#accent)" stroke-width="4" filter="url(#glow)" />
+  <path d="M 150 150 Q 300 220 450 150 T 750 150 T 1050 150" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 8" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="5s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Glowing Nodes -->
+  <circle cx="150" cy="150" r="8" fill="#38bdf8" filter="url(#glow)" />
+  <circle cx="450" cy="150" r="8" fill="#818cf8" filter="url(#glow)" />
+  <circle cx="750" cy="150" r="8" fill="#c084fc" filter="url(#glow)" />
+  <circle cx="1050" cy="150" r="8" fill="#f472b6" filter="url(#glow)" />
+
+  <!-- Main Banner Typography -->
+  <g text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    <text x="600" y="125" font-size="42" font-weight="800" fill="#ffffff" letter-spacing="2">
+      AWESOME FIRMWARE OVER-THE-AIR
+    </text>
+    <text x="600" y="170" font-size="20" font-weight="500" fill="url(#accent)" letter-spacing="4">
+      ⚡ SECURE FOTA / OTA UPDATES FOR IOT, MCU &amp; EMBEDDED LINUX 🚀
+    </text>
+    <text x="600" y="215" font-size="14" font-weight="400" fill="#94a3b8" letter-spacing="1">
+      A Curated Collection of Open-Source Frameworks &amp; Enterprise Platforms
+    </text>
+  </g>
+</svg>
