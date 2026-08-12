@@ -49,7 +49,7 @@ Below is a comparative breakdown of commercial and hosted FOTA/OTA device manage
 
 Below are top open-source OTA update clients, servers, and bootloaders, sorted by **GitHub Star Count** in descending order.
 
-| Project | Description | License | GitHub Stars | Focus Area |
+| Project | Description | License | GitHub_Stars | Focus Area |
 |---------|-------------|---------|--------------|------------|
 | **[The Update Framework (TUF)](https://github.com/theupdateframework/tuf)** 🛡️ | Cloud Native Computing Foundation (CNCF) security specification and framework for secure software delivery and update validation. | Apache 2.0 / MIT | [![GitHub Stars](https://img.shields.io/github/stars/theupdateframework/tuf?style=social&color=white)](https://github.com/theupdateframework/tuf/stargazers) | Security foundation for OTA & Uptane |
 | **[Mender Client](https://github.com/mendersoftware/mender)** 📦 | Production-ready open-source update client for embedded Linux supporting A/B dual-bank rootfs updates, delta updates, and standalone mode. | Apache 2.0 | [![GitHub Stars](https://img.shields.io/github/stars/mendersoftware/mender?style=social&color=white)](https://github.com/mendersoftware/mender/stargazers) | Embedded Linux A/B rootfs updates |
